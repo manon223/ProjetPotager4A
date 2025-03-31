@@ -27,7 +27,7 @@ export default function Navbar(){
                 </div>
 
 
-                    <a href="/nouveauCompte" className="ml-auto p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <a href="/login" className="ml-auto p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <UserCircleIcon className="h-8 w-8 text-gray-700 dark:text-white" />
                     </a>
 

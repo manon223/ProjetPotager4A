@@ -6,7 +6,7 @@ export default function LoginPage() {
     return (
         <div className="flex min-h-screen">
             {/* Bloc de gauche avec bordure */}
-            <div className="w-1/3 bg-green-700"></div>
+            <div className="w-1/3 bg-[#3D9013]"></div>
 
             {/* Bloc de droite avec le formulaire */}
             <div className="flex flex-col items-center justify-center w-2/3 bg-white">
@@ -34,13 +34,13 @@ export default function LoginPage() {
                         />
                     </div>
                     <div className="mb-4">
-                        <Link href = "/" className=" text-green-700">Mot de passe oublié ? </Link>
+                        <Link href = "/" className=" text-[#3D9013]">Mot de passe oublié ? </Link>
                     </div>
 
                     {/* Bouton de connexion */}
                     <button
                         type="submit"
-                        className="bg-green-600 text-white py-2 px-4 rounded w-full hover:bg-green-700"
+                        className="bg-[#3D9013] text-white py-2 px-4 rounded w-full hover:bg-green-700"
                     >
                         Se connecter
                     </button>
@@ -48,7 +48,7 @@ export default function LoginPage() {
                 <br />
                 <div>
                     <p>Pas de compte ?
-                        <Link href = "/" className=" text-green-700"> Créer un compte</Link>
+                        <Link href = "/login/nouveauCompte" className=" text-[#3D9013]"> Créer un compte</Link>
                     </p>
 
                 </div>
