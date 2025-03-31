@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Navbar from "@/components/Navbar";
 
 export default function AjouterPlante() {
     const [nom, setNom] = useState("");
@@ -16,6 +17,8 @@ export default function AjouterPlante() {
     };
     return (
 
+        <>
+        <Navbar/>
         <div className="bg-green-100 min-h-screen flex items-center justify-center py-8">
 
             <div className="bg-white p-8 rounded-xl shadow-xl w-96 space-y-6">
@@ -79,5 +82,6 @@ export default function AjouterPlante() {
                 </form>
             </div>
         </div>
+            </>
     );
 }
