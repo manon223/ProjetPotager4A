@@ -4,7 +4,7 @@ export default function fichePlante(){
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar/>
-            <main className="flex-1 flex flex-col justify-center items-center"> {/* Marge pour éviter que la navbar recouvre le titre */}
+            <main className="flex-1 flex flex-col justify-center items-center ">
                         <div className="text-center py-6">
                             <Image src="/tomate.png" alt="Tomate" width={150} height={150} className="mx-auto" />
                             <br/>

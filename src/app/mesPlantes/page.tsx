@@ -1,6 +1,7 @@
 // 'use client'; // Si tu utilises Next.js 13 avec "app" dir
 
 import React from 'react';
+import Navbar from "@/components/Navbar";
 
 // Exemple de données de plantes (tu peux remplacer ceci par un appel API si nécessaire)
 const plants = [
@@ -28,6 +29,8 @@ const plants = [
 
 const PlantesPage = () => {
     return (
+        <>
+        <Navbar/>
         <div className="min-h-screen bg-gray-50 p-8">
             <h1 className="text-3xl font-bold text-green-600 mb-6">Mes Plantes</h1>
 
@@ -37,18 +40,22 @@ const PlantesPage = () => {
                         key={plant.id}
                         className="bg-white rounded-lg shadow-lg overflow-hidden"
                     >
-                        <img
+                        <a href="/mesPlantes/fichePlante">
+                            <img
                             src={plant.image}
                             alt={plant.name}
                             className="w-full h-40 object-cover"
-                        />
-                        <div className="p-4">
+                            />
+                        </a>
+
+                    <div className="p-4">
                             <h2 className="text-xl font-semibold text-green-700">{plant.name}</h2>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
+        </>
     );
 };
 
