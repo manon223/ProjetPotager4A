@@ -1,9 +1,16 @@
 import Navbar from "@/components/Navbar";
 import { getWeather } from "../../lib/weather";
 
+interface Weather {
+    temperature: number;
+    windspeed: number;
+    weathercode: number;
+    description: string;
+    icon: string;
+}
 
 export default async function Home(){
-    const weather = await getWeather();
+    const weather = await getWeather() as Weather | null;
   return (
       <>
         <Navbar/>
@@ -16,9 +23,14 @@ export default async function Home(){
                         <h2>Météo à Paris :</h2>
                         {weather ? (
                             <div>
+                                <div className="text-6xl mb-2">{weather.icon}</div>
                                 <p>Température actuelle : {weather.temperature}°C</p>
                                 <p>Vent : {weather.windspeed} km/h</p>
+                                <p className="text-lg text-blue-700 mb-4">{weather.description}</p>
                                 <p>{weather.weathercode === 0 ? "Ciel dégagé" : "Temps nuageux"}</p>
+
+                                <p className="font-medium">{new Date().toLocaleTimeString()}</p>
+
                             </div>
                         ) : (
                             <p>Impossible de récupérer la météo.</p>
