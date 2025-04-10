@@ -8,22 +8,22 @@ const plants = [
     {
         id: 1,
         name: 'Tomate',
-        image: '/images/tomate.jpg', // Assure-toi d'avoir une image à ce chemin
+        image: 'tomate.jpg', // Assure-toi d'avoir une image à ce chemin
     },
     {
         id: 2,
         name: 'Carotte',
-        image: '/images/carotte.jpg',
+        image: 'carotte.jpg',
     },
     {
         id: 3,
         name: 'Laitue',
-        image: '/images/laitue.jpg',
+        image: 'laitue.jpg',
     },
     {
         id: 4,
         name: 'Poivron',
-        image: '/images/poivron.jpg',
+        image: 'poivrons.jpg',
     },
 ];
 
@@ -43,8 +43,7 @@ const PlantesPage = () => {
                         <a href="/mesPlantes/fichePlante">
                             <img
                             src={plant.image}
-                            alt={plant.name}
-                            className="w-full h-40 object-cover"
+                            className="w-full w-80 h-80 object-cover"
                             />
                         </a>
 

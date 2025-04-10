@@ -6,7 +6,7 @@ export default function fichePlante(){
             <Navbar/>
             <main className="flex-1 flex flex-col justify-center items-center ">
                         <div className="text-center py-6">
-                            <Image src="/tomate.png" alt="Tomate" width={150} height={150} className="mx-auto" />
+                            <Image src="/tomate.jpg" alt="Tomate" width={150} height={150} className="mx-auto" />
                             <br/>
                             <h2 className="text-2xl font-bold">Tomate</h2>
                             <br/>
